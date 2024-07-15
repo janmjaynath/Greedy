@@ -1,0 +1,21 @@
+import java.util.*;
+public class Greedy {
+    public static int findlargest(int L , int R){
+        int k= 0;
+        int maximun = Integer.MIN_VALUE;
+        for(int i=L;i<R;i++){
+            if(i%2!=0){
+            k = i;
+        }
+        maximun = Math.max(maximun, k);
+
+    }
+    return maximun;
+}
+
+public static void main(String[] args) {
+    int L= -3;
+    int R = 3;
+    System.out.println(findlargest(L, R)); 
+}
+}
